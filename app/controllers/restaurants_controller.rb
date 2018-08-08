@@ -22,6 +22,7 @@ before_action :find_restaurant, only: [:show, :edit, :update, :destroy]
 
   def show
     @reviews = @restaurant.reviews
+    @review = Review.new
   end
 
   private
